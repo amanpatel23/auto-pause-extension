@@ -1,0 +1,22 @@
+{
+    "name": "auto-pause",
+    "description": "auto pause video on tab or window change",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["scripting"],
+    "host_permissions": [
+        "https://www.udemy.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "images/pause.png",
+        "48": "images/pause.png",
+        "128": "images/pause.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "images/pause.png"
+    }
+}
